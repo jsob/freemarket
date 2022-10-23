@@ -13,7 +13,7 @@ defined('FIR') OR exit();
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($data['admin']['imagelocation'])?>" class="img-circle" alt="User Image" />
+              <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($data['admin']['imagelocation'])?>" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p><?=e($data['admin']['name'])?></p>

@@ -40,7 +40,7 @@
 				  
 					<div class="form-group">
 					<label><?=$this->lang('current_image')?></label>
-					 <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/categories/<?=e($data['category']['imagelocation'])?>" width="100" height="90"/>
+					 <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/categories/<?=e($data['category']['imagelocation'])?>" width="100" height="90"/>
 					</div>	
 
 					<div class="form-group">

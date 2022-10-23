@@ -17,7 +17,7 @@ defined('FIR') OR exit();
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		 </button>
-		 <a href="<?=$this->siteUrl()?>" class="navbar-brand"><img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('logo'))?>" alt="Logo"  class="img-fluid" width="80" height="90"></a>
+		 <a href="<?=$this->siteUrl()?>" class="navbar-brand"><img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('logo'))?>" alt="Logo"  class="img-fluid" width="20" height="90"></a>
 		</div><!-- /.navbar-header -->
 		<div class="navbar-left pull-center">
 		 <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -51,21 +51,25 @@ defined('FIR') OR exit();
 				<a class="dropdown-item" href="<?=$this->siteUrl()?>/how"><?=$this->lang('how')?></a>
 				<a class="dropdown-item" href="<?=$this->siteUrl()?>/faq"><?=$this->lang('faq')?></a>
 				<a class="dropdown-item" href="<?=$this->siteUrl()?>/contact"><?=$this->lang('contact')?></a>
-			  </div>
-			 </li><!-- /navbar-item -->	
+              </div>
+			 </li>
+             <li class="">
+                 <a href="<?=$this->siteUrl()?>/lang/russian">Русский</a>
+             </li>
+              <!-- /navbar-item -->
 		   
-			 <li class="dropdown mega-avatar">
+			 <!--li class="dropdown mega-avatar">
 			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 			   <span>
-				<?=  "";/* $this->lang('languages')?> - <?=mb_strtoupper(mb_substr($data['language'], 0, 2)) */ ?>
+				<?=$this->lang('languages')?> - <?=mb_strtoupper(mb_substr($data['language'], 0, 2)); ?>
 			   </span>
 			  </a>
 			  <div class="dropdown-menu w dropdown-menu-scale pull-right">
-				<?php /* foreach($data['languages_list'] as $language): */ ?>
-				<!--a class="dropdown-item" href="<?=""//$this->siteUrl()?>/lang/<?="" //$language?>"><?= "" //$language?></a-->
-				<?php //endforeach ?>
+				<?php //foreach($data['languages_list'] as $language): ?>
+    				<!--a class="dropdown-item" href="<?=$this->siteUrl()?>/lang/<?=$language?>"><?=$language?></a>
+                <?php //endforeach ?>
 			  </div>
-			 </li><!-- /navbar-item -->	
+			 </li--><!-- /navbar-item -->
 		 
 		  </ul>
 		 </div>
@@ -81,7 +85,7 @@ defined('FIR') OR exit();
 		  
 			 <li class="dropdown mega-avatar">
 			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-			   <span class="avatar w-32"><img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" class="img-resonsive img-circle" width="25" height="25" alt="..."></span>
+			   <span class="avatar w-32"><img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" class="img-resonsive img-circle" width="25" height="25" alt="..."></span>
 			   <!-- hidden-xs hides the username on small devices so only the image appears. -->
 			   <span>
 				<?=e($data['user']['name'])?>
@@ -101,7 +105,7 @@ defined('FIR') OR exit();
 		  
 			 <li class="dropdown mega-avatar">
 			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-			   <span class="avatar w-32"><img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" class="img-resonsive img-circle" width="25" height="25" alt="..."></span>
+			   <span class="avatar w-32"><img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" class="img-resonsive img-circle" width="25" height="25" alt="..."></span>
 			   <!-- hidden-xs hides the username on small devices so only the image appears. -->
 			   <span>
 				<?=e($data['user']['name'])?>

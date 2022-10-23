@@ -8,7 +8,7 @@ defined('FIR') OR exit();
      <!-- ==============================================
 	 Header Section
 	 =============================================== -->
-	 <header class="how-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_two'))?>') no-repeat center center fixed;">
+	 <header class="how-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_two'))?>') no-repeat center center fixed;">
       <div class="container">
        <div class="row">
 	   
@@ -38,7 +38,7 @@ defined('FIR') OR exit();
 		   <div class="img-main">
 		    <div class="imagearea">
 			 <a href="<?=$this->siteUrl()?>/product/<?=e($row['productid'])?>/<?=e($row['slug'])?>" title="<?=e($row['name'])?>">
-		      <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/products/<?=e($row['imagelocation'])?>" class="" alt="Preview" height="333" width="505">
+		      <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/products/<?=e($row['imagelocation'])?>" class="" alt="Preview" height="333" width="505">
              </a>			 
 			</div>
 		   </div><!--/img-main -->
@@ -59,7 +59,7 @@ defined('FIR') OR exit();
 					foreach($data['technology_array'] as $key=>$name){
 						if(in_array($name['0'],$arr)){ ?>
 						
-						<img class="img-responsive" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/technologies/<?=e($name['1'])?>" alt="<?=e($name['0'])?>">
+						<img class="img-responsive" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/technologies/<?=e($name['1'])?>" alt="<?=e($name['0'])?>">
 						
 					<?php	
 						}

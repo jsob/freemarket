@@ -23,7 +23,7 @@ defined('FIR') OR exit();
 		<?php if($data['hasProposal'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_proposal')?>.</h3>
 			 <p><a class="kafe-btn kafe-btn-yellow-small" href="<?=$this->siteUrl()?>/projects"><?=$this->lang('add_proposal')?></a></p>
           </div><!-- /.prop-info -->	

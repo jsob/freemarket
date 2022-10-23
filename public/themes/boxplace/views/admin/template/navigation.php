@@ -49,7 +49,7 @@ defined('FIR') OR exit();
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <!-- The user image in the navbar-->
                   
-                  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($data['admin']['imagelocation'])?>" class="user-image" alt="User Image"/>
+                  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($data['admin']['imagelocation'])?>" class="user-image" alt="User Image"/>
                 
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
                   <span class="hidden-xs">

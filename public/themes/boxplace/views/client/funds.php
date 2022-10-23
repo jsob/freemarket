@@ -23,7 +23,7 @@ defined('FIR') OR exit();
 		<?php if($data['has_funds'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_funds')?>.</h3>
 				 <p><a class="kafe-btn kafe-btn-red" href="<?=$this->siteUrl()?>/<?=$this->client_url()?>/addfunds"><?=$this->lang('add_funds')?></a></p>
           </div><!-- /.prop-info -->	

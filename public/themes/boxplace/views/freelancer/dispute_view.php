@@ -41,7 +41,7 @@ defined('FIR') OR exit();
 			   <div class="proposal-img-inner">
 			 <?php if(e($row["is_admin"]) === "1"): ?>  
 				 <a>
-				  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($data['admin']['imagelocation'])?>" alt="Profile Picture">
+				  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($data['admin']['imagelocation'])?>" alt="Profile Picture">
 				 </a>
 				<h4><?=$this->lang('admin')?></h4>
 			 <?php else: ?>  
@@ -49,12 +49,12 @@ defined('FIR') OR exit();
 				 if($r1['userid'] == $row['user_sending']){ 
 				  if($r1['user_type'] == 1):?>
 					 <a href="<?=$this->siteUrl()?>/<?=$this->freelancers_url()?>/portfolio/<?=e($r1["userid"])?>/<?=e($r1["slug"])?>">
-					  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($r1['imagelocation'])?>" alt="Profile Picture">
+					  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($r1['imagelocation'])?>" alt="Profile Picture">
 					 </a>
 				<h4><?=$this->freelancer_name()?></h4>
 				 <?php elseif($r1['user_type'] == 2):?>
 					 <a href="<?=$this->siteUrl()?>/<?=$this->clients_url()?>/projects/<?=e($r1["userid"])?>/<?=e($r1["slug"])?>">
-					  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($r1['imagelocation'])?>" alt="Profile Picture">
+					  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($r1['imagelocation'])?>" alt="Profile Picture">
 					 </a>
 				<h4><?=$this->client_name()?></h4>
 				 <?php endif; ?>

@@ -9,7 +9,7 @@ defined('FIR') OR exit();
 						  <div class="proposal-img">
 						   <div class="proposal-img-inner">
 							 <a href="<?=$this->siteUrl()?>/<?=$this->clients_url()?>/projects/<?=e($data['user']["userid"])?>/<?=e($data['user']["slug"])?>">
-							  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" alt="Profile Picture">
+							  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" alt="Profile Picture">
 							 </a>
 							<h4><?=$this->client_name()?></h4>
 						   </div>

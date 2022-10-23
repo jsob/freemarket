@@ -9,7 +9,7 @@ defined('FIR') OR exit();
 						  <div class="proposal-img">
 						   <div class="proposal-img-inner">
 							 <a>
-							  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($data['admin']['imagelocation'])?>" alt="Profile Picture">
+							  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($data['admin']['imagelocation'])?>" alt="Profile Picture">
 							 </a>
 							<h4><?=$this->lang('admin')?></h4>
 						   </div>

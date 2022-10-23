@@ -103,7 +103,7 @@ defined('FIR') OR exit();
 				  
                     <div class="form-group">
 					 <div class="image text-center">
-					  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" class="img-thumbnail" width="115" height="115"/>
+					  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" class="img-thumbnail" width="115" height="115"/>
 					 </div>
                     </div>
 

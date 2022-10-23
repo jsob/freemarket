@@ -31,7 +31,7 @@ defined('FIR') OR exit();
 			<div class="form-group">
 			 <label><?=$this->lang('background_image')?></label>
 			 <div class="image">
-			  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['bg_imagelocation'])?>" class="img-thumbnail" width="415" height="315"/>
+			  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['bg_imagelocation'])?>" class="img-thumbnail" width="415" height="315"/>
 			 </div>
 			</div>
 
@@ -59,7 +59,7 @@ defined('FIR') OR exit();
 		   
 		    <div class="change-photo">
 			 <div class="user-image">
-		      <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" alt="Image" class="img-responsive">
+		      <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" alt="Image" class="img-responsive">
 			 </div>
 					  
 		    </div><!-- /.change-photo -->

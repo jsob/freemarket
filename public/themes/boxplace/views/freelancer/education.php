@@ -23,7 +23,7 @@ defined('FIR') OR exit();
 		<?php if($data['hasEducation'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_education')?>.</h3>
 			 <p><?=$this->lang('add_here')?>:- <a class="kafe-btn kafe-btn-yellow-small" href="<?=$this->siteUrl()?>/<?=$this->freelancer_url()?>/education/add"><?=$this->lang('add_education')?></a></p>
           </div><!-- /.prop-info -->	

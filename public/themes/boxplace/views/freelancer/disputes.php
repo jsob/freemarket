@@ -23,7 +23,7 @@ defined('FIR') OR exit();
 		<?php if($data['has_disputes'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_disputes')?>.</h3>
           </div><!-- /.prop-info -->	
 		  
@@ -39,7 +39,7 @@ defined('FIR') OR exit();
 				<?php foreach($data['users'] as $r1){
 				 if($r1['userid'] == $row['clientid']){ ?>
 				 <a href="<?=$this->siteUrl()?>/<?=$this->clients_url()?>/projects/<?=e($r1["userid"])?>/<?=e($r1["slug"])?>">
-				  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($r1['imagelocation'])?>" alt="Profile Picture">
+				  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($r1['imagelocation'])?>" alt="Profile Picture">
 				 </a>
 				<?php } }?> 
 			   </div>

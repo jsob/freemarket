@@ -39,14 +39,14 @@
 						
 					foreach($data["user"] as $r1){	
 					  if($row["userid"] == $r1["userid"]):
-					    echo '<td><img src="'. $this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH .'/admin/users/'. e($r1["imagelocation"]) .'" width="50" height="30" />'. e($r1["name"]) .'</td>';
+					    echo '<td><img src="'. $this->siteUrl().'/'.UPLOADS_PATH .'/admin/users/'. e($r1["imagelocation"]) .'" width="50" height="30" />'. e($r1["name"]) .'</td>';
 					  endif;	
 					} 
 					    echo '<td>'. e($data["currency_symbol"]) .''. e($row["price_paid"]) .'</td>';
 						
 					foreach($data["product"] as $r1){	
 					  if($row["productid"] == $r1["productid"]):	
-					    echo '<td><img src="'. $this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH .'/admin/products/'. e($r1["imagelocation"]) .'" width="50" height="30" />'. e($r1["name"]) .'</td>';
+					    echo '<td><img src="'. $this->siteUrl().'/'.UPLOADS_PATH .'/admin/products/'. e($r1["imagelocation"]) .'" width="50" height="30" />'. e($r1["name"]) .'</td>';
 					  endif;	
 					} 
 					    echo '<td>'. e($date_added) .'</td>';

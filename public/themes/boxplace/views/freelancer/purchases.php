@@ -38,7 +38,7 @@ defined('FIR') OR exit();
 						foreach($data['transactions'] as $row) {	
 						
 					    echo '<tr>';
-					    echo '<td><img src="'. $this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH .'/admin/products/'. e($row["imagelocation"]) .'" width="100" height="70" /></td>';
+					    echo '<td><img src="'. $this->siteUrl().'/'.UPLOADS_PATH .'/admin/products/'. e($row["imagelocation"]) .'" width="100" height="70" /></td>';
 					    echo '<td><a href="'. $this->siteUrl().'/product/'. e($row["productid"]) .'/'. e($row["slug"]) .'" target="_blank">'. e($row["name"]) .'</a></td>';
 					    echo '<td>'. e(e($this->currency)) .''. e($row["price_paid"]) .'</td>';
 						

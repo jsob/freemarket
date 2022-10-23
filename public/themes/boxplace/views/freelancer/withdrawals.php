@@ -25,7 +25,7 @@ defined('FIR') OR exit();
 		<?php if($data['has_withdrawals'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_withdrawals')?>.</h3>
           </div><!-- /.prop-info -->	
 		  

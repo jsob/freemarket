@@ -9,7 +9,7 @@ defined('FIR') OR exit();
      <!-- ==============================================
 	 Header Section
 	 =============================================== -->
-	 <header class="jobpost-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['client']['bg_imagelocation'])?>') no-repeat center center fixed;">
+	 <header class="jobpost-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['client']['bg_imagelocation'])?>') no-repeat center center fixed;">
       <div class="container">
        <div class="row">
 	   
@@ -38,7 +38,7 @@ defined('FIR') OR exit();
 	 
      <div class="header-avatar">
 	  <a href="<?=$this->siteUrl()?>/<?=$this->clients_url()?>/projects/<?=e($data['client']['userid'])?>/<?=e($data['client']['slug'])?>">
-	   <img alt="Image" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['client']['imagelocation'])?>" class="avatar avatar-200 photo" width="200" height="200">
+	   <img alt="Image" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['client']['imagelocation'])?>" class="avatar avatar-200 photo" width="200" height="200">
 	  </a>
 	  <p><?=e($data['client']['name'])?></p>
 	 </div><!-- /.header-avatar -->	 	

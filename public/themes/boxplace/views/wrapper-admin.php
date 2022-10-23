@@ -7,8 +7,9 @@ defined('FIR') OR exit();
 ?>
 
 <!DOCTYPE html>
+
 <html>
-	<head>
+<head>
 	    <!-- ==============================================
 		Title and Meta Tags
 		=============================================== -->
@@ -22,7 +23,7 @@ defined('FIR') OR exit();
 		<!-- ==============================================
 		Favicons
 		=============================================== --> 
-        <link href="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('favicon'))?>" rel="icon">
+        <link href="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('favicon'))?>" rel="icon">
 		
 		<!-- ==============================================
 		Fonts
@@ -91,7 +92,7 @@ defined('FIR') OR exit();
 
 		  gtag('config', '<?=e($this->siteSettings('analytics'))?>');
 		</script>	
-  </head>
+    </head>
   
 <body class="skin-green sidebar-mini">
      

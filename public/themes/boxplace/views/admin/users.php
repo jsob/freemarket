@@ -38,7 +38,7 @@
 							$date_added = strftime("%b %d, %Y, %H : %M %p ", strtotime($row["joined"]));
 	
 					    echo '<tr id="tr'.e($row["id"]).'">';
-					    echo '<td><img src="'. $this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH .'/admin/users/'. e($row["imagelocation"]) .'" width="50" height="30" /></td>';
+					    echo '<td><img src="'. $this->siteUrl().'/'.UPLOADS_PATH .'/admin/users/'. e($row["imagelocation"]) .'" width="50" height="30" /></td>';
 					    echo '<td>'. e($row["name"]) .'</td>';
 					    echo '<td>'. e($row["email"]) .'</td>';
 						

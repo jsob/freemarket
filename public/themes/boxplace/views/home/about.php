@@ -8,7 +8,7 @@ defined('FIR') OR exit();
      <!-- ==============================================
 	 Header Section
 	 =============================================== -->
-	 <header class="how-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_one'))?>') no-repeat center center fixed;">
+	 <header class="how-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_one'))?>') no-repeat center center fixed;">
       <div class="container">
        <div class="row">
 	   
@@ -41,7 +41,7 @@ defined('FIR') OR exit();
 				<div class="image-column col-lg-6 col-md-12 col-sm-12">
 					<div class="inner-column wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 						<div class="image">
-							<img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/about/<?=e($data['about']['about_image'])?>" alt="about" />
+							<img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/about/<?=e($data['about']['about_image'])?>" alt="about" />
 						</div>
 					</div>
 				</div>
@@ -103,7 +103,7 @@ defined('FIR') OR exit();
 			<?php endif; ?>
 
 			<figure class="wojo image effect winston" data-weditable="true">
-			  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/team/<?=e($row['imagelocation'])?>" class="img-responsive" alt="Email us">
+			  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/team/<?=e($row['imagelocation'])?>" class="img-responsive" alt="Email us">
 			  <figcaption>
 				<h3 class="wojo white text"><?=e($name[0])?> <span><?=e($name[1])?></span></h3>
 				<h4><?=e($row['title'])?></h4>

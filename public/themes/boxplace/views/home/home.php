@@ -10,7 +10,7 @@ defined('FIR') OR exit();
 	<!-- ==============================================
 	 Header Section
 	 =============================================== -->	
-     <section class="tr-banner" style="background: linear-gradient( rgba(34,34,34,0.7), rgba(34,34,34,0.7) ), url('<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_one'))?>') no-repeat center center fixed;">
+     <section class="tr-banner" style="background: linear-gradient( rgba(34,34,34,0.7), rgba(34,34,34,0.7) ), url('<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_one'))?>') no-repeat center center fixed;">
       <div class="container">
 	   <div class="row">
 		<div class="col-lg-12">
@@ -114,7 +114,7 @@ defined('FIR') OR exit();
 			<?php endif; ?>
 					<div class="inner-box">
 						<div class="image">
-							<img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/categories/<?=e($row['imagelocation'])?>" alt="Image" />
+							<img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/categories/<?=e($row['imagelocation'])?>" alt="Image" />
 							<div class="overlay-box">
                                 <div class="overlay-inner">
                                     <div class="content">
@@ -185,7 +185,7 @@ defined('FIR') OR exit();
 				<?php foreach($data['users'] as $r2){
 					if($r2['userid'] == $row['userid']){ ?>
 				  <a href="<?=$this->siteUrl()?>/<?=$this->freelancers_url()?>/portfolio/<?=e($r2["userid"])?>/<?=e($r2["slug"])?>">
-				   <img class="img-responsive design-img" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/portfolio/<?=e($row['imagelocation'])?>" alt="Portfolio">
+				   <img class="img-responsive design-img" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/portfolio/<?=e($row['imagelocation'])?>" alt="Portfolio">
 				  </a>
 				<?php } }?>
 			  </div><!--/design-card -->
@@ -195,7 +195,7 @@ defined('FIR') OR exit();
 					if($r2['userid'] == $row['userid']){ ?>
 						 <div class="design-footer-image">
 						  <a href="<?=$this->siteUrl()?>/<?=$this->freelancers_url()?>/portfolio/<?=e($r2["userid"])?>/<?=e($r2["slug"])?>">
-						   <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($r2['imagelocation'])?>" class="img-responsive img-circle" alt="User Image">
+						   <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($r2['imagelocation'])?>" class="img-responsive img-circle" alt="User Image">
 						  </a>						
 						 </div>
 						 <div class="design-footer-details">
@@ -265,7 +265,7 @@ defined('FIR') OR exit();
 				<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
 			<?php endif; ?>			
 					<div class="working-process"><span class="process-img">
-					<img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/how/<?=e($row['imagelocation'])?>" class="img-responsive" alt="Section">
+					<img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/how/<?=e($row['imagelocation'])?>" class="img-responsive" alt="Section">
 					<span class="process-num">0<?=e($c)?></span></span>
 						<h4><?=e($row['title'])?></h4>
 						<p><?=e($row['description'])?></p>
@@ -311,7 +311,7 @@ defined('FIR') OR exit();
 			  <div class="item">
 				<div class="content">“<?=e($row['quote'])?>”</div>
 				<div class="customer-thumb">
-			      <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/customer/<?=e($row['imagelocation'])?>" alt="customer" class="img-circle" />
+			      <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/customer/<?=e($row['imagelocation'])?>" alt="customer" class="img-circle" />
 				  <h6><?=e($row['name'])?></h6>
 				  <p><?=e($row['title'])?></p>
 				</div>

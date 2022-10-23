@@ -11,7 +11,7 @@ defined('FIR') OR exit();
      <!-- ==============================================
 	 Header Section
 	 =============================================== -->
-	 <header class="how-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_two'))?>') no-repeat center center fixed;">
+	 <header class="how-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_two'))?>') no-repeat center center fixed;">
       <div class="container">
        <div class="row">
 	   
@@ -44,7 +44,7 @@ defined('FIR') OR exit();
 		<?php if($data['has_freelancers'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_freelancers')?> <?=$this->freelancer_name_plural()?>.</h3>
           </div><!-- /.prop-info -->	
 		  
@@ -85,7 +85,7 @@ defined('FIR') OR exit();
 			  <div class="freelancer-box-img">
 			   <div class="freelancer-box-img-inner">
 				 <a href="<?=$this->siteUrl()?>/<?=$this->freelancers_url()?>/portfolio/<?=e($row["userid"])?>/<?=e($row["slug"])?>">
-				 <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($row['imagelocation'])?>" alt="Profile Picture"></a>
+				 <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($row['imagelocation'])?>" alt="Profile Picture"></a>
 			   </div>
 			  </div><!--/ .freelancer-box-img -->	
 			  <div class="freelancer-box-details">

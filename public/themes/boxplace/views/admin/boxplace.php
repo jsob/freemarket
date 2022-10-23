@@ -168,7 +168,7 @@ defined('FIR') OR exit();
 				  
                     <div class="form-group">
 					 <div class="image text-center">
-					  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($data['theme']['bg_image_one'])?>" class="img-thumbnail" width="515" height="415"/>
+					  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($data['theme']['bg_image_one'])?>" class="img-thumbnail" width="515" height="415"/>
 					 </div>
                     </div>
 
@@ -205,7 +205,7 @@ defined('FIR') OR exit();
 				  
                     <div class="form-group">
 					 <div class="image text-center">
-					  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($data['theme']['bg_image_two'])?>" class="img-thumbnail" width="515" height="415"/>
+					  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($data['theme']['bg_image_two'])?>" class="img-thumbnail" width="515" height="415"/>
 					 </div>
                     </div>
 
@@ -252,7 +252,7 @@ defined('FIR') OR exit();
 				  
 					<div class="form-group">
 					<label><?=$this->lang('current_image')?></label>
-					 <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/how/<?=e($data['how_section']['imagelocation'])?>" width="100" height="90"/>
+					 <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/how/<?=e($data['how_section']['imagelocation'])?>" width="100" height="90"/>
 					</div>	
 
 					<div class="form-group">
@@ -337,7 +337,7 @@ defined('FIR') OR exit();
 						foreach($data['how_it_works'] as $row) {
 	
 					    echo '<tr id="tr'.e($row["id"]).'">';
-					    echo '<td><img src="'. $this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH .'/admin/how/'. e($row["imagelocation"]) .'" width="50" height="30" /></td>';
+					    echo '<td><img src="'. $this->siteUrl().'/'.UPLOADS_PATH .'/admin/how/'. e($row["imagelocation"]) .'" width="50" height="30" /></td>';
 					    echo '<td>'. e($row["title"]) .'</td>';
 					    echo '<td>'. e($row["description"]) .'</td>';
 					    echo '<td>
@@ -396,7 +396,7 @@ defined('FIR') OR exit();
 				  
 					<div class="form-group">
 					<label><?=$this->lang('current_image')?></label>
-					 <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/customer/<?=e($data['customer']['imagelocation'])?>" width="100" height="90"/>
+					 <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/customer/<?=e($data['customer']['imagelocation'])?>" width="100" height="90"/>
 					</div>	
 
 					<div class="form-group">
@@ -487,7 +487,7 @@ defined('FIR') OR exit();
 						foreach($data['customers'] as $row) {
 	
 					    echo '<tr id="tr-customer'.e($row["id"]).'">';
-					    echo '<td><img src="'. $this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH .'/admin/customer/'. e($row["imagelocation"]) .'" width="50" height="30" /></td>';
+					    echo '<td><img src="'. $this->siteUrl().'/'.UPLOADS_PATH .'/admin/customer/'. e($row["imagelocation"]) .'" width="50" height="30" /></td>';
 					    echo '<td>'. e($row["name"]) .'</td>';
 					    echo '<td>'. e($row["title"]) .'</td>';
 					    echo '<td>'. e($row["quote"]) .'</td>';
@@ -545,7 +545,7 @@ defined('FIR') OR exit();
 				  
 					<div class="form-group">
 					<label><?=$this->lang('current_image')?></label>
-					 <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/about/<?=e($data['settings']['about_image'])?>" width="100" height="90"/>
+					 <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/about/<?=e($data['settings']['about_image'])?>" width="100" height="90"/>
 					</div>	
 
 					<div class="form-group">
@@ -604,7 +604,7 @@ defined('FIR') OR exit();
 				  
 					<div class="form-group">
 					<label><?=$this->lang('current_image')?></label>
-					 <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/team/<?=e($data['team']['imagelocation'])?>" width="100" height="90"/>
+					 <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/team/<?=e($data['team']['imagelocation'])?>" width="100" height="90"/>
 					</div>	
 
 					<div class="form-group">
@@ -707,7 +707,7 @@ defined('FIR') OR exit();
 						foreach($data['team'] as $row) {
 	
 					    echo '<tr id="tr-team'.e($row["id"]).'">';
-					    echo '<td><img src="'. $this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH .'/admin/team/'. e($row["imagelocation"]) .'" width="50" height="30" /></td>';
+					    echo '<td><img src="'. $this->siteUrl().'/'.UPLOADS_PATH .'/admin/team/'. e($row["imagelocation"]) .'" width="50" height="30" /></td>';
 					    echo '<td>'. e($row["name"]) .'</td>';
 					    echo '<td>'. e($row["title"]) .'</td>';
 					    echo '<td>'. e($row["facebook"]) .'</td>';

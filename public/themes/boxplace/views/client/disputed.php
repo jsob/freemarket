@@ -55,7 +55,7 @@ defined('FIR') OR exit();
 		<?php if($data['has'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_project')?>.</h3>
 			 <p><a class="kafe-btn kafe-btn-yellow-small" href="<?=$this->siteUrl()?>/<?=$this->client_url()?>/dashboard/add"><?=$this->lang('add_project')?></a></p>
           </div><!-- /.prop-info -->	
@@ -80,7 +80,7 @@ defined('FIR') OR exit();
 					<?php foreach($data['projects_user'] as $r2){
 						if($r2['userid'] == $row['freelancerid']){ ?>
 					 <a href="<?=$this->siteUrl()?>/<?=$this->freelancers_url()?>/portfolio/<?=e($r2["userid"])?>/<?=e($r2["slug"])?>" target="_blank">
-					  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($r2['imagelocation'])?>" alt="Profile Picture">
+					  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($r2['imagelocation'])?>" alt="Profile Picture">
 					 </a>
 					 <h4><?=e($r2["name"])?></h4>
 					<?php } }?> 

@@ -552,7 +552,7 @@ class Freelancer extends Controller
 			if($has_file === true):
 			
 				$file = $freelancerModel->get_file($this->url[2]);
-				$filepath = URL_PATH.'/'.PUBLIC_PATH.'/'.UPLOADS_PATH.'/admin/files/'.$file["fileupload"];	
+				$filepath = URL_PATH.'/'.UPLOADS_PATH.'/admin/files/'.$file["fileupload"];	
 				
 				
 				// Process download
@@ -636,8 +636,8 @@ class Freelancer extends Controller
 				   {
 					 $fileName = $this->rando().'.'.$fileFormat;
 					 // If the file can't be written on the disk (will return 0)
-					 $path = sprintf('%s/../../%s/%s/admin/files/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-					 
+					 //$path = sprintf('%s/../../%s/%s/admin/files/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                     $path = UPLOADS_PATH.'/admin/files/';
 
 					 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 					  {
@@ -1944,8 +1944,8 @@ class Freelancer extends Controller
 					   {
 						 $fileName = $this->rando().'.'.$fileFormat;
 						 // If the file can't be written on the disk (will return 0)
-						 $path = sprintf('%s/../../%s/%s/admin/portfolio/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-						 
+						 //$path = sprintf('%s/../../%s/%s/admin/portfolio/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                         $path = UPLOADS_PATH.'/admin/portfolio/';
 
 						 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 						  {
@@ -2030,8 +2030,8 @@ class Freelancer extends Controller
 						   {
 							 $fileName = $this->rando().'.'.$fileFormat;
 							 // If the file can't be written on the disk (will return 0)
-							 $path = sprintf('%s/../../%s/%s/admin/portfolio/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-							 
+							 //$path = sprintf('%s/../../%s/%s/admin/portfolio/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                             $path = UPLOADS_PATH.'/admin/portfolio/';
 
 							 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 							  {
@@ -2138,8 +2138,8 @@ class Freelancer extends Controller
 				   {
 					 $fileName = $this->rando().'.'.$fileFormat;
 					 // If the file can't be written on the disk (will return 0)
-					 $path = sprintf('%s/../../%s/%s/admin/users/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-					 
+					 //$path = sprintf('%s/../../%s/%s/admin/users/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                     $path = UPLOADS_PATH.'/admin/users/';
 
 					 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 					  {
@@ -2200,8 +2200,8 @@ class Freelancer extends Controller
 				   {
 					 $fileName = $this->rando().'.'.$fileFormat;
 					 // If the file can't be written on the disk (will return 0)
-					 $path = sprintf('%s/../../%s/%s/admin/users/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-					 
+					 //$path = sprintf('%s/../../%s/%s/admin/users/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                     $path = UPLOADS_PATH.'/admin/users/';
 
 					 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 					  {

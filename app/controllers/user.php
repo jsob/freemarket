@@ -297,8 +297,8 @@ class User extends Controller
 			   {
 				 $fileName = $this->rando().'.'.$fileFormat;
 				 // If the file can't be written on the disk (will return 0)
-                 $path = sprintf('%s/../../%s/%s/admin/users/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-				 
+                 //$path = sprintf('%s/../../%s/%s/admin/users/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                 $path = UPLOADS_PATH.'/admin/users/';
 
 				 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 				  {

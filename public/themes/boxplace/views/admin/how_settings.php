@@ -102,7 +102,7 @@ defined('FIR') OR exit();
                   <div class="box-body">
                     <div class="form-group">
 					 <div class="image text-center">
-					  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/how/<?=e($data['settings']['how_client_image'])?>" class="img-thumbnail" width="515" height="415"/>
+					  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/how/<?=e($data['settings']['how_client_image'])?>" class="img-thumbnail" width="515" height="415"/>
 					 </div>
                     </div>
 
@@ -134,7 +134,7 @@ defined('FIR') OR exit();
                   <div class="box-body">
                     <div class="form-group">
 					 <div class="image text-center">
-					  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/how/<?=e($data['settings']['how_freelancer_image'])?>" class="img-thumbnail" width="515" height="415"/>
+					  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/how/<?=e($data['settings']['how_freelancer_image'])?>" class="img-thumbnail" width="515" height="415"/>
 					 </div>
                     </div>
 

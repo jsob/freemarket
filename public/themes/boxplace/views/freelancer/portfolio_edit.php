@@ -30,7 +30,7 @@ defined('FIR') OR exit();
 			  
 				<div class="form-group">
 				 <div class="image">
-				  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/portfolio/<?=e($data['portfolio']['imagelocation'])?>" class="img-thumbnail" width="315" height="315"/>
+				  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/portfolio/<?=e($data['portfolio']['imagelocation'])?>" class="img-thumbnail" width="315" height="315"/>
 				 </div>
 				</div>
             

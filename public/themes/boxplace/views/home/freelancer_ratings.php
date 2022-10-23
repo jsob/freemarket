@@ -9,11 +9,11 @@ defined('FIR') OR exit();
 	 <!-- ==============================================
 	 Header Section
 	 =============================================== -->	
-     <section class="profile-banner" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['bg_imagelocation'])?>') no-repeat center center fixed;">
+     <section class="profile-banner" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['bg_imagelocation'])?>') no-repeat center center fixed;">
       <div class="container">
        <div class="banner-content text-center">
 	    <a href="<?=$this->siteUrl()?>/<?=$this->freelancers_url()?>/portfolio/<?=e($data['user']["userid"])?>/<?=e($data['user']["slug"])?>">
-		  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" class="img-responsive img-circle"/>
+		  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" class="img-responsive img-circle"/>
 		</a>
         <h1 class="<?=($data['user']["verified"] == '1' ? ' verified' : '')?>"><?=e($data['user']["name"])?></h1>
         <h2><?=e($data['user']["title"])?></h2>
@@ -64,7 +64,7 @@ defined('FIR') OR exit();
 		<?php if($data['has_ratings'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_ratings_to_display')?>.</h3>
           </div><!-- /.prop-info -->	
 		  
@@ -87,11 +87,11 @@ defined('FIR') OR exit();
 							if($value[1] == $n['userid']){ ?>
 								<?php if($n['user_type'] == "1"): ?>
 									 <a href="<?=$this->siteUrl()?>/<?=$this->freelancers_url()?>/portfolio/<?=e($n["userid"])?>/<?=e($n["slug"])?>">
-									  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($n['imagelocation'])?>" alt="Profile Picture">
+									  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($n['imagelocation'])?>" alt="Profile Picture">
 									 </a>
 								<?php elseif($n['user_type'] == "2"): ?>
 									 <a href="<?=$this->siteUrl()?>/<?=$this->clients_url()?>/projects/<?=e($n["userid"])?>/<?=e($n["slug"])?>">
-									  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($n['imagelocation'])?>" alt="Profile Picture">
+									  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($n['imagelocation'])?>" alt="Profile Picture">
 									 </a>
 								<?php endif; ?>
 						<?php } }?>

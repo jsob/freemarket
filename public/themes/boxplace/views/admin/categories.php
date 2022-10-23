@@ -33,7 +33,7 @@
 						foreach($data['category'] as $row) {
 	
 					    echo '<tr id="tr'.e($row["id"]).'">';
-					    echo '<td><img src="'. $this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH .'/admin/categories/'. e($row["imagelocation"]) .'" width="70" height="60" /></td>';
+					    echo '<td><img src="'. $this->siteUrl().'/'.UPLOADS_PATH .'/admin/categories/'. e($row["imagelocation"]) .'" width="70" height="60" /></td>';
 					    echo '<td>'. e($row["name"]) .'</td>';
 					    echo '<td>
 					      <a href="'. $this->siteUrl() .'/admin/categories/edit/' . e($row["id"]) . '" class="btn btn-success btn-xs" data-toggle="tooltip" title="'. $this->lang('edit') .'"><span class="fa fa-edit"></span></a>

@@ -17,7 +17,7 @@ defined('FIR') OR exit();
 
 		  <div class="avatar-box">		 
            <div id="bigFace" data-step="4" data-intro="Upload a profile picture.">
-            <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" id="profileBigFace" class="img-responsive img-circle"/>
+            <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" id="profileBigFace" class="img-responsive img-circle"/>
            </div>	
 		  </div>	 
 		 

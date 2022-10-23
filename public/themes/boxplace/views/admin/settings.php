@@ -125,7 +125,7 @@ defined('FIR') OR exit();
                   <div class="box-body">
                     <div class="form-group">
 					 <div class="image text-center">
-					  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($data['settings']['logo'])?>" class="img-thumbnail" width="515" height="415"/>
+					  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($data['settings']['logo'])?>" class="img-thumbnail" width="515" height="415"/>
 					 </div>
                     </div>
 
@@ -157,7 +157,7 @@ defined('FIR') OR exit();
                   <div class="box-body">
                     <div class="form-group">
 					 <div class="image text-center">
-					  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($data['settings']['favicon'])?>" class="img-thumbnail" width="155" height="145"/>
+					  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($data['settings']['favicon'])?>" class="img-thumbnail" width="155" height="145"/>
 					 </div>
                     </div>
 

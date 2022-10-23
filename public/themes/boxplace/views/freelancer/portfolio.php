@@ -23,7 +23,7 @@ defined('FIR') OR exit();
 		<?php if($data['has'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_portfolio')?>.</h3>
 			 <p><?=$this->lang('add_here')?>:- <a class="kafe-btn kafe-btn-yellow-small" href="<?=$this->siteUrl()?>/<?=$this->freelancer_url()?>/portfolio/add"><?=$this->lang('add_portfolio')?></a></p>
           </div><!-- /.prop-info -->	
@@ -59,7 +59,7 @@ defined('FIR') OR exit();
 			<div class="col-lg-4" id="tr<?=e($row["id"])?>">
 			 <div class="gal-item">
 			  <a href="#" data-toggle="modal" data-target="#<?=e($row["id"])?>">
-			   <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/portfolio/<?=e($row['imagelocation'])?>" class="img-responsive box-img" alt="Image">
+			   <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/portfolio/<?=e($row['imagelocation'])?>" class="img-responsive box-img" alt="Image">
 			  </a>
 			  <div class="gal-footer">
 					<a href="<?=$this->siteUrl()?>/<?=$this->freelancer_url()?>/portfolio/edit/<?=e($row["id"])?>" class="kafe-btn kafe-btn-red-small"><?=$this->lang('edit')?> </a>
@@ -70,7 +70,7 @@ defined('FIR') OR exit();
 				<div class="modal-content">
 				 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 				 <div class="modal-body">
-				  <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/portfolio/<?=e($row['imagelocation'])?>" class="img-responsive modal-img" alt="Image">
+				  <img src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/portfolio/<?=e($row['imagelocation'])?>" class="img-responsive modal-img" alt="Image">
 				 </div>
 				 <div class="col-md-12 description">
 				  <p><?=e($row["description"])?></p>

@@ -8,7 +8,7 @@ defined('FIR') OR exit();
      <!-- ==============================================
 	 Header Section
 	 =============================================== -->
-	 <header class="how-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_two'))?>') no-repeat center center fixed;">
+	 <header class="how-header" style="background: linear-gradient( rgba(34,34,34,0.6), rgba(34,34,34,0.6) ), url('<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->theme_details('bg_image_two'))?>') no-repeat center center fixed;">
       <div class="container">
        <div class="row">
 	   
@@ -27,7 +27,7 @@ defined('FIR') OR exit();
 	 =============================================== -->	 
 	 
      <div class="how-avatar">
-	  <img alt="..." src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('favicon'))?>" class="avatar avatar-200 photo" width="200" height="200">
+	  <img alt="..." src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('favicon'))?>" class="avatar avatar-200 photo" width="200" height="200">
 	  <p><?=e($this->siteSettings('sitename'))?></p>
 	 </div><!-- /.header-avatar -->	 
 	 
@@ -48,7 +48,7 @@ defined('FIR') OR exit();
 	   
        <div class="row">
 	    <div class="col-lg-4">
-		    <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/how/<?=e($this->siteSettings('how_client_image'))?>" alt="Profile Picture">
+		    <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/how/<?=e($this->siteSettings('how_client_image'))?>" alt="Profile Picture">
 		</div>
 	    <div class="col-lg-8">
 
@@ -90,7 +90,7 @@ defined('FIR') OR exit();
 		
 		</div>
 	    <div class="col-lg-4">
-		    <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/how/<?=e($this->siteSettings('how_freelancer_image'))?>" alt="Profile Picture">
+		    <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/how/<?=e($this->siteSettings('how_freelancer_image'))?>" alt="Profile Picture">
 		</div>
 	   
        </div><!--/. row -->

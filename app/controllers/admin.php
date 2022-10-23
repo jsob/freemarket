@@ -157,8 +157,8 @@ class Admin extends Controller
      * Get the available Themes
      */
     private function getThemes() {
-        $path = sprintf('%s/../../%s/%s/', __DIR__, PUBLIC_PATH, THEME_PATH);
-
+        //$path = sprintf('%s/../../%s/%s/', __DIR__, PUBLIC_PATH, THEME_PATH);
+        $path = THEME_PATH;
         $themes = scandir($path);
 
         $output = [];
@@ -308,8 +308,8 @@ class Admin extends Controller
 			   {
 				 $fileName = $this->rando().'.'.$fileFormat;
 				 // If the file can't be written on the disk (will return 0)
-				 $path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-				 
+				 //$path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                 $path = UPLOADS_PATH.'/admin/';
 
 				 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 				  {
@@ -369,8 +369,8 @@ class Admin extends Controller
 			   {
 				 $fileName = $this->rando().'.'.$fileFormat;
 				 // If the file can't be written on the disk (will return 0)
-				 $path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-				 
+				 //$path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+				 $path = UPLOADS_PATH.'/admin/';
 
 				 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 				  {
@@ -441,8 +441,8 @@ class Admin extends Controller
 				   {
 					 $fileName = date('y.m.d.H.i') . "-" . microtime(true) . "-" . mt_rand(0, 99999999) . '.' . $fileFormat;
 					 // If the file can't be written on the disk (will return 0)
-					 $path = sprintf('%s/../../%s/%s/admin/how/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-					 
+					 //$path = sprintf('%s/../../%s/%s/admin/how/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                     $path = UPLOADS_PATH.'/admin/how/';
 
 					 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 					  {
@@ -530,8 +530,8 @@ class Admin extends Controller
 						   {
 							 $fileName = date('y.m.d.H.i') . "-" . microtime(true) . "-" . mt_rand(0, 99999999) . '.' . $fileFormat;
 							 // If the file can't be written on the disk (will return 0)
-							 $path = sprintf('%s/../../%s/%s/admin/how/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-							 
+							 //$path = sprintf('%s/../../%s/%s/admin/how/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                             $path = UPLOADS_PATH.'/admin/how/';
 
 							 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 							  {
@@ -634,8 +634,8 @@ class Admin extends Controller
 				   {
 					 $fileName = date('y.m.d.H.i') . "-" . microtime(true) . "-" . mt_rand(0, 99999999) . '.' . $fileFormat;
 					 // If the file can't be written on the disk (will return 0)
-					 $path = sprintf('%s/../../%s/%s/admin/customer/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-					 
+					 //$path = sprintf('%s/../../%s/%s/admin/customer/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                     $path = UPLOADS_PATH.'/admin/customer/';
 
 					 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 					  {
@@ -728,8 +728,8 @@ class Admin extends Controller
 						   {
 							 $fileName = date('y.m.d.H.i') . "-" . microtime(true) . "-" . mt_rand(0, 99999999) . '.' . $fileFormat;
 							 // If the file can't be written on the disk (will return 0)
-							 $path = sprintf('%s/../../%s/%s/admin/customer/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-							 
+							 //$path = sprintf('%s/../../%s/%s/admin/customer/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                             $path = UPLOADS_PATH.'/admin/customer/';
 
 							 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 							  {
@@ -837,8 +837,8 @@ class Admin extends Controller
 				   {
 					 $fileName = date('y.m.d.H.i') . "-" . microtime(true) . "-" . mt_rand(0, 99999999) . '.' . $fileFormat;
 					 // If the file can't be written on the disk (will return 0)
-					 $path = sprintf('%s/../../%s/%s/admin/team/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-					 
+					 //$path = sprintf('%s/../../%s/%s/admin/team/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                     $path = UPLOADS_PATH.'/admin/team/';
 
 					 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 					  {
@@ -938,8 +938,8 @@ class Admin extends Controller
 						   {
 							 $fileName = date('y.m.d.H.i') . "-" . microtime(true) . "-" . mt_rand(0, 99999999) . '.' . $fileFormat;
 							 // If the file can't be written on the disk (will return 0)
-							 $path = sprintf('%s/../../%s/%s/admin/team/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-							 
+							 //$path = sprintf('%s/../../%s/%s/admin/team/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                             $path = UPLOADS_PATH.'/admin/team/';
 
 							 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 							  {
@@ -1054,8 +1054,8 @@ class Admin extends Controller
 				   {
 					 $fileName = date('y.m.d.H.i') . "-" . microtime(true) . "-" . mt_rand(0, 99999999) . '.' . $fileFormat;
 					 // If the file can't be written on the disk (will return 0)
-					 $path = sprintf('%s/../../%s/%s/admin/about/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-					 
+					 //$path = sprintf('%s/../../%s/%s/admin/about/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                     $path = UPLOADS_PATH.'/admin/about/';
 
 					 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 					  {
@@ -1235,8 +1235,8 @@ class Admin extends Controller
 			   {
 				 $fileName = $this->rando().'.'.$fileFormat;
 				 // If the file can't be written on the disk (will return 0)
-                 $path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-				 
+                 //$path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                 $path = UPLOADS_PATH.'/admin/';
 
 				 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 				  {
@@ -1444,8 +1444,8 @@ class Admin extends Controller
 			   {
 				 $fileName = $this->rando().'.'.$fileFormat;
 				 // If the file can't be written on the disk (will return 0)
-                 $path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-				 
+                 //$path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                 $path = UPLOADS_PATH.'/admin/';
 
 				 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 				  {
@@ -1502,8 +1502,8 @@ class Admin extends Controller
 			   {
 				 $fileName = $this->rando().'.'.$fileFormat;
 				 // If the file can't be written on the disk (will return 0)
-                 $path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-				 
+                 //$path = sprintf('%s/../../%s/%s/admin/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                 $path =UPLOADS_PATH.'/admin/';
 
 				 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 				  {
@@ -2372,8 +2372,8 @@ class Admin extends Controller
 			   {
 				 $fileName = $this->rando().'.'.$fileFormat;
 				 // If the file can't be written on the disk (will return 0)
-                 $path = sprintf('%s/../../%s/%s/admin/how/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-				 
+                 //$path = sprintf('%s/../../%s/%s/admin/how/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                 $path = UPLOADS_PATH.'/admin/how/';
 
 				 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 				  {
@@ -2430,8 +2430,8 @@ class Admin extends Controller
 			   {
 				 $fileName = $this->rando().'.'.$fileFormat;
 				 // If the file can't be written on the disk (will return 0)
-                 $path = sprintf('%s/../../%s/%s/admin/how/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-				 
+                 //$path = sprintf('%s/../../%s/%s/admin/how/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                 $path = UPLOADS_PATH.'/admin/how/';
 
 				 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 				  {
@@ -2692,8 +2692,8 @@ class Admin extends Controller
 					   {
 						 $fileName = date('y.m.d.H.i') . "-" . microtime(true) . "-" . mt_rand(0, 99999999) . '.' . $fileFormat;
 						 // If the file can't be written on the disk (will return 0)
-						 $path = sprintf('%s/../../%s/%s/admin/categories/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-						 
+						 //$path = sprintf('%s/../../%s/%s/admin/categories/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                         $path = UPLOADS_PATH.'/admin/categories/';
 
 						 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 						  {
@@ -2810,8 +2810,8 @@ class Admin extends Controller
 						   {
 							 $fileName = date('y.m.d.H.i') . "-" . microtime(true) . "-" . mt_rand(0, 99999999) . '.' . $fileFormat;
 							 // If the file can't be written on the disk (will return 0)
-							 $path = sprintf('%s/../../%s/%s/admin/categories/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-							 
+							 //$path = sprintf('%s/../../%s/%s/admin/categories/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                             $path = UPLOADS_PATH.'/admin/categories/';
 
 							 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 							  {
@@ -3231,8 +3231,8 @@ class Admin extends Controller
 					   {
 						 $fileName = $this->rando().'.'.$fileFormat;
 						 // If the file can't be written on the disk (will return 0)
-						 $path = sprintf('%s/../../%s/%s/admin/users/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
-						 
+						 //$path = sprintf('%s/../../%s/%s/admin/users/', __DIR__, PUBLIC_PATH, UPLOADS_PATH);
+                         $path = UPLOADS_PATH.'/admin/users/';
 
 						 if(move_uploaded_file($_FILES['photoimg']['tmp_name'], $path.$fileName))
 						  {
@@ -3777,7 +3777,7 @@ class Admin extends Controller
 			if($has_file === true):
 			
 				$file = $adminModel->get_file($this->url[2]);
-				$filepath = URL_PATH.'/'.PUBLIC_PATH.'/'.UPLOADS_PATH.'/admin/files/'.$file["fileupload"];	
+				$filepath = URL_PATH.'/'.UPLOADS_PATH.'/admin/files/'.$file["fileupload"];	
 				
 				
 				// Process download

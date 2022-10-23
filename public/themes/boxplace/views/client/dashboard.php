@@ -55,7 +55,7 @@ defined('FIR') OR exit();
 		<?php if($data['has'] === false): ?> 
 		  
 		  <div class="prop-info text-center">
-		     <img src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
+		     <img src="<?=$this->siteUrl().'/'.$this->themePath().'/'.$this->theme()?>/assets/img/graphic.png" class="img-responsive" alt="Image" />
 			 <h3><?=$this->lang('no_project')?>.</h3>
 			 <p><a class="kafe-btn kafe-btn-yellow-small" href="<?=$this->siteUrl()?>/<?=$this->client_url()?>/dashboard/add"><?=$this->lang('add_project')?></a></p>
           </div><!-- /.prop-info -->	

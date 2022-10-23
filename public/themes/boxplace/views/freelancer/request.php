@@ -25,7 +25,7 @@ defined('FIR') OR exit();
           <div class="proposal-img">
 		   <div class="proposal-img-inner">
 			 <a href="<?=$this->siteUrl()?>/freelancers/portfolio/<?=e($data['user']['userid'])?>/<?=e($data['user']['slug'])?>">
-			  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" alt="Profile Picture">
+			  <img class="img-responsive img-circle" src="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/users/<?=e($data['user']['imagelocation'])?>" alt="Profile Picture">
 			 </a>
 		   </div>
 		  </div><!--/ .freelancer-box-img -->	

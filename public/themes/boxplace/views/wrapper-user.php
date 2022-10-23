@@ -5,10 +5,11 @@ defined('FIR') OR exit();
  * This file puts together the three main section of the software, header, content and footer
  */
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
 
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
 	    <!-- ==============================================
 		Title and Meta Tags
 		=============================================== -->
@@ -22,14 +23,14 @@ defined('FIR') OR exit();
 		<meta property="og:title" content="<?=e($this->siteSettings('title'))?> : <?=e($this->siteSettings('sitename'))?>"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="<?=$this->siteUrl()?>"/>
-		<meta property="og:image" content="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('favicon'))?>"/>
+		<meta property="og:image" content="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('favicon'))?>"/>
 		<meta property="og:site_name" content="<?=e($this->siteSettings('sitename'))?>"/>
 		<meta property="og:description" content="<?=e($this->siteSettings('description'))?>"/>		
 		
 		<!-- ==============================================
 		Favicons
 		=============================================== --> 
-        <link href="<?=$this->siteUrl().'/'.PUBLIC_PATH.'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('favicon'))?>" rel="icon">
+        <link href="<?=$this->siteUrl().'/'.UPLOADS_PATH?>/admin/<?=e($this->siteSettings('favicon'))?>" rel="icon">
 		
 		
 		<!-- ==============================================
@@ -55,7 +56,7 @@ defined('FIR') OR exit();
 
 		  gtag('config', '<?=e($this->siteSettings('analytics'))?>');
 		</script>	
-  </head>
+    </head>
 
   <body>
 		<?=$data['header_view']?>

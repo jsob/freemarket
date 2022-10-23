@@ -2,6 +2,8 @@
 
 namespace Fir\Controllers;
 
+use Fir\Languages\Language;
+
 class Home extends Controller
 {
     /**
@@ -16,7 +18,7 @@ class Home extends Controller
         if (isset($this->url[0]) && $this->url[0] == 'lang') {
             $this->updateLanguage($this->url[1]);
         }
-
+//var_dump($this);
         /**
          * The $data array stores all the data that is passed to the views
          */
@@ -56,6 +58,7 @@ class Home extends Controller
 		$data['is_divisible_by_3'] = $this->is_divisible_by_3($homeModel->how_total());
 		$data['customers'] = $homeModel->customers();
 
+		//var_dump($data);
         return ['content' => $this->view->render($data, 'home/home')];
     }
 	
