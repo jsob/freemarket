@@ -69,7 +69,7 @@ class Forgot extends Controller
 						$id = base64_encode($m["userid"]);
 					
 						$mail = new PHPMailer;
-						 
+						$mail->CharSet = 'UTF-8'; 
 						//Server settings
 						$mail->isSMTP();                                      // Set mailer to use SMTP
 						$mail->Host = $data['settings']['smtp_host'];  // Specify main and backup SMTP servers
@@ -81,15 +81,16 @@ class Forgot extends Controller
 			
 						 $mail->setFrom($data['settings']['smtp_username'], $data['settings']['sitename']);
 						 $mail->addAddress($m["email"], $m["name"]);
-						 $mail->Subject = "Forgot password - " .$data['settings']['sitename'];
+						 $sbj = 'Сброс пароля - ' . $data['settings']['sitename'];
+						 $sbj = mb_convert_encoding($sbj, 'UTF-8');
+						 $mail->Subject = $sbj;
 						 $mail->isHTML(true);
-						 $mail->Body = "
-							   <p>Hello ". $m["name"] ."</p>
-							   <p>You have requested to reset your password from our website ". $data['settings']['sitename'] .",.</p>
-							   <p>Click Following Link To Reset Your Password</p> 
-							   <a href='". URL_PATH ."/password/$id/$token'>click here to reset your password</a>
-							   <p>Thank you.</p>
-						 ";
+						 $str = "<p>Здравствуйте, ". $m["name"] ."!</p>
+                                <p>Вы запросили сброс пароля на сайте ". URL_PATH ." - ". $data['settings']['sitename'] .
+                                ". Пройдите по ссылке для сброса пароля.</p> 
+                                <a href='". URL_PATH ."/password/$id/$token'>Сбросить пароль</a>
+                                <p>Спасибо!</p>";
+						 $mail->Body = mb_convert_encoding($str,'HTML-ENTITIES','UTF-8');
 						 $mail->send();			
 					 
 						$_SESSION['message'][] = ['success', $this->lang['email_sent']];
