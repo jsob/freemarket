@@ -53,9 +53,7 @@ defined('FIR') OR exit();
 				<a class="dropdown-item" href="<?=$this->siteUrl()?>/contact"><?=$this->lang('contact')?></a>
               </div>
 			 </li>
-             <li class="">
-                 <a href="<?=$this->siteUrl()?>/lang/russian">Русский</a>
-             </li>
+
               <!-- /navbar-item -->
 		   
 			 <!--li class="dropdown mega-avatar">
